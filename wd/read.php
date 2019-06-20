@@ -57,10 +57,18 @@ if(isset($_POST['updateN'])){
 input {
     border-style: none;
 }
+.header {
+    <background-color: green;
+    height: 45px;
+    width: auto;
+}
 </style>
 </head>
 
 <body>
+<div class=header>
+    <p>Header Text and image here</p>
+</div>
 <form action="read.php" method="POST">
     <input name="updateN" type="button" id="updateN" value="Test">
 </form>
