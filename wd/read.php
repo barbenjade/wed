@@ -17,14 +17,14 @@ while($row = mysqli_fetch_assoc($result)){
     echo "<td>" . "<input type=text value=" . $row['name'] . ">" . "</td>";
     echo "<td>" . "<input type=text value=" . $row['password'] . ">" . "</td>";
     echo "<form action=read.php method=POST id=formUp>";
-    echo "<td>" . "<input type=button form=formUP name=updateN class=button1 value=Update" . ">" . "</td>";
+    echo "<td>" . "<input type=button form=formUP name=updateN class=button1 value=Edit" . ">" . "</td>";
     echo "</form>";
     echo "<td>" . "<input type=button name=delete class=button1 value=Delete" . ">" . "</td>";
     echo "</tr>";
 }
 echo "</table>";
 
-
+function updateN(){
 if(isset($_POST['updateN'])){
     // $username = $_POST['user_name'];
     // $password = $_POST['password'];
@@ -36,6 +36,9 @@ if(isset($_POST['updateN'])){
 
     // $results = mysqli_query($query, $connection);
     echo "yes I do";
+
+}
+
 }
 ?>
 
@@ -56,6 +59,7 @@ if(isset($_POST['updateN'])){
 }
 input {
     border-style: none;
+    background-color: tan;
 }
 .header {
     <background-color: green;
