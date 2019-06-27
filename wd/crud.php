@@ -42,8 +42,9 @@ if(isset($_POST['submit'])) {
 function datesOne() {
     $month = date("F");
     $dayofMonth = date("j");
-    $year = date("Y");
+    $car = date("Y");
     $time = date("g:i");
+    $year = date("Y");
 
     echo "<br>Today is $month $dayofMonth, $year. <br><br>";
 }
@@ -81,8 +82,10 @@ if(isset($_POST['test1'])){
     <input type="text" name="user_name" id="user_name">
     <label for="password">Password</label>
     <input type="password" name="password" id="password">
-
+    <a href="userinfo.php">
     <input type="submit" name="submit" id="submit"> 
+    </a>
+    <a href="https://mail.google.com/mail/u/0/#inbox">Click ME</a>
     <input type="button" name="test1" value="test">
 </form>
 
