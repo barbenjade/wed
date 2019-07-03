@@ -52,14 +52,19 @@ if(isset($_POST['updateN'])){
     background-color: #6C81AF;
     border-radius: 8px;
 }
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #table1 td {
     height: 40px;
     padding: 8px;
     margin: 8px;
+    
 }
 input {
     border-style: none;
-    background-color: tan;
 }
 .header {
     <background-color: green;

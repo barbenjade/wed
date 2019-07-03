@@ -77,7 +77,7 @@ if(isset($_POST['test1'])){
 </head>
 
 <body>
-<form action="crud.php" method="post">
+<form class="form1" action="crud.php" method="post">
     <label for="user_name">Name</label>
     <input type="text" name="user_name" id="user_name">
     <label for="password">Password</label>
