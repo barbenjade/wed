@@ -17,9 +17,9 @@ while($row = mysqli_fetch_assoc($result)){
     echo "<td>" . "<input type=text value=" . $row['name'] . ">" . "</td>";
     echo "<td>" . "<input type=text value=" . $row['password'] . ">" . "</td>";
     echo "<form action=read.php method=POST id=formUp>";
-    echo "<td>" . "<input type=button form=formUP name=updateN class=button1 value=Edit" . ">" . "</td>";
+    echo "<td>" . "<input type=submit form=formUP name=updateN class=button1 value=Edit" . ">" . "</td>";
     echo "</form>";
-    echo "<td>" . "<input type=button name=delete class=button1 value=Delete" . ">" . "</td>";
+    echo "<td>" . "<input type=submit name=delete class=button1 value=Delete" . ">" . "</td>";
     echo "</tr>";
 }
 echo "</table>";
@@ -35,11 +35,14 @@ if(isset($_POST['updateN'])){
     // $query .= "WHERE id = $ID";
 
     // $results = mysqli_query($query, $connection);
-    echo "yes I do";
+    echo "yes I do 666666";
 
 }
 
+
 }
+
+updateN();
 ?>
 
 <html>
@@ -61,7 +64,6 @@ form {
     height: 40px;
     padding: 8px;
     margin: 8px;
-    
 }
 input {
     border-style: none;
@@ -78,12 +80,9 @@ input {
 <div class=header>
     <p>Header Text and image here</p>
 </div>
-<form action="read.php" method="POST">
-    <input name="updateN" type="button" id="updateN" value="Test">
-</form>
-<div class=echo1>
-    <?php updateTwo("Shrek is one"); ?>
-</div>
+<!-- <form action="read.php" method="POST">
+    <input name="updateN" type="submit" id="updateN" value="Test">
+</form> -->
 <div id="link1">
     <a href="crud.php">Home Page</a>
 </div> 

@@ -65,9 +65,7 @@ function countDown() {
 }
 
 countDown();
-if(isset($_POST['test1'])){
-    echo "austin b";
-}
+
 ?>
 
 <html>
@@ -86,7 +84,6 @@ if(isset($_POST['test1'])){
     <input type="submit" name="submit" id="submit"> 
     </a>
     <a href="https://mail.google.com/mail/u/0/#inbox">Click ME</a>
-    <input type="button" name="test1" value="test">
 </form>
 
 <div id="link1">
