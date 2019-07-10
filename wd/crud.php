@@ -1,4 +1,9 @@
 <?php
+//See if this shows up in the code tomorrow morning. 
+echo "test for github pull";
+
+
+
 // include "read.php";
 $connection = mysqli_connect('localhost', 'root', '', 'dbthree');
 
