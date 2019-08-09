@@ -1,2 +1,2 @@
 # wedInvite
-Backup files for wedding invite site.
+Backup files for wedding invite web site.
