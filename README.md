@@ -1,2 +1,2 @@
 # wedInvite
-Backup files for wedding invite web site.
+Backup files for wedding invitation web site for Cory's wedding.
